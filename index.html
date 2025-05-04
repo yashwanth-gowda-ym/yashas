@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashas Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(135deg, #ffffff, #f0f4ff);
+            border: 1px solid #e5e7eb;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-color: #ff6b6b;
+        }
+        .skills-card {
+            background: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+        }
+        .hobbies-card {
+            background: linear-gradient(135deg, #fed7aa, #fb923c);
+        }
+        .projects-card {
+            background: linear-gradient(135deg, #bfdbfe, #60a5fa);
+        }
+        .achievements-card {
+            background: linear-gradient(135deg, #fbcfe8, #f472b6);
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold">Yashas</h1>
+            <h2 class="text-xl md:text-2xl font-light mt-2">Portfolio</h2>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-semibold text-gray-800 section-title">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card skills-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Python Programming</h3>
+                </div>
+                <div class="card skills-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">JavaScript & HTML/CSS</h3>
+                </div>
+                <div class="card skills-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Data Analysis & Visualization</h3>
+                </div>
+                <div class="card skills-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Machine Learning Basics</h3>
+                </div>
+                <div class="card skills-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Database Management (SQL)</h3>
+                </div>
+            </div>
+        </section>
+        <section id="hobbies" class="mb-16">
+            <h2 class="text-3xl font-semibold text-gray-800 section-title">Hobbies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card hobbies-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Photography</h3>
+                </div>
+                <div class="card hobbies-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Chess</h3>
+                </div>
+                <div class="card hobbies-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Reading Science Fiction</h3>
+                </div>
+                <div class="card hobbies-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Hiking</h3>
+                </div>
+                <div class="card hobbies-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Coding Side Projects</h3>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-semibold text-gray-800 section-title">Projects</h2>
+            <div class="space-y-6">
+                <div class="card projects-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Personal Blog Website</h3>
+                    <p class="text-gray-700 mt-2">Developed a responsive blog using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="card projects-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Data Dashboard</h3>
+                    <p class="text-gray-700 mt-2">Built an interactive dashboard with Python and Dash for real-time data visualization.</p>
+                </div>
+                <div class="card projects-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Chess AI</h3>
+                    <p class="text-gray-700 mt-2">Created a basic chess-playing bot using Python and minimax algorithm.</p>
+                </div>
+                <div class="card projects-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-medium text-gray-900">Photo Gallery App</h3>
+                    <p class="text-gray-700 mt-2">Designed a web app to showcase photography portfolio with React.</p>
+                </div>
+            </div>
+        </section>
+        <section id="achievements" class="mb-16">
+            <h2 class="text-3xl font-semibold text-gray-800 section-title">Achievements</h2>
+            <div class="space-y-6">
+                <div class="card achievements-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-900">Won 1st place in Regional Coding Hackathon 2024</p>
+                </div>
+                <div class="card achievements-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-900">Published article on Machine Learning in Tech Journal</p>
+                </div>
+                <div class="card achievements-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-900">Completed Data Science Certification from Coursera</p>
+                </div>
+                <div class="card achievements-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-900">Ranked Top 10 in National Chess Tournament 2023</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2025 Yashas. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
